@@ -1,0 +1,27 @@
+<div class="container">
+  <div
+    [@openClose]="isCardOneOpen ? 'active' : 'inactive'"
+    class="card"
+    (click)="toggleCardOne()"
+  >
+    <div class="card-face card-face__layout">
+      card 1 is active
+    </div>
+    <div class="card-face card-face__layout back">
+      <span>card 1 is inactive</span>
+    </div>
+  </div>
+
+  <div
+    [@openClose]="isCardTwoOpen ? 'active' : 'inactive'"
+    class="card"
+    (click)="toggleCardTwo()"
+  >
+    <div class="card-face card-face__layout">
+      card 2 is active
+    </div>
+    <div class="card-face card-face__layout back">
+      card 2 is inactive
+    </div>
+  </div>
+</div>
